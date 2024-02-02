@@ -1,0 +1,68 @@
+/*
+Variables
+*/
+/*
+Mixin
+*/
+/*
+Variables
+*/
+/*
+Variables
+*/
+/*
+Mixin
+*/
+.text-center {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+}
+
+header {
+  border: 2px solid #800080;
+  width: 700px;
+  text-align: center;
+}
+header h1 {
+  color: #800080;
+}
+
+main {
+  border: 2px solid #800080;
+  width: 700px;
+  text-align: center;
+}
+main h2 {
+  color: #800080;
+}
+main p {
+  color: #000;
+}
+main .btn {
+  display: block;
+  width: 100px;
+  padding: 20px 10px;
+  border-radius: 6px;
+  margin: 20px auto;
+  text-decoration: none;
+  background-color: green;
+  color: white;
+}
+
+footer {
+  border: 2px solid #800080;
+  width: 700px;
+  text-align: center;
+}
+footer .copyright {
+  color: #000;
+}
+
+/*# sourceMappingURL=main.css.map */

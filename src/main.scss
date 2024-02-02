@@ -1,0 +1,67 @@
+/*
+Variables
+*/
+
+/*
+Mixin
+*/
+@use 'colors';
+@use 'typography';
+@use 'styles';
+
+.text-center{
+    text-align: center;
+}
+
+@mixin theme($theme: colors.$primary-color) {
+    border: 2px solid colors.$primary-color;
+    width: 700px;
+    text-align: center;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: typography.$primary-font-family;
+    background-color: lightgray;
+   
+}
+
+header{
+    @include theme;
+
+    h1{
+        color: colors.$primary-color;
+    }
+    
+}
+
+main{
+    @include theme;
+
+    h2{
+        color: colors.$primary-color;
+    }
+    p{
+        color: colors.$secondary-color;
+    }
+
+    .btn{
+        @include styles.btn(colors.$tertiary-color);
+
+    }
+}
+
+footer{
+    @include theme;
+    
+    .copyright{
+        color: colors.$secondary-color;
+}
+}
+
+
+
+
